@@ -20,10 +20,10 @@
     <div class='col-sm-5 x-content'>
       <%= f.text_field(:address, class: "form-control", data: { name: "@employee.address" }) %></div>
   </div>
-  <div class='form-group' data-component='form_element/text_field'>
+  <div class='form-group' data-component='form_element/relation_select'>
     <label class='col-sm-3 control-label contenteditable'>部署</label>
     <div class='col-sm-5 x-content'>
-      <%= f.text_field(:busho, class: "form-control", data: { name: "@employee.busho" }) %></div>
+      <%= f.select(:section_id, relation_select(:Section, :id, :sec_name), {}, { class: "form-control", data: { name: "@employee.section_id", relation: "Section", column: "sec_name"}}) %></div>
   </div>
   <div class='form-group'>
     <div class='col-sm-offset-3 col-sm-5 x-content'>

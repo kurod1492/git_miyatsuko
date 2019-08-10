@@ -15,7 +15,7 @@
       <td data-name='employee.emp_id'><%= employee.emp_id %></td>
       <td data-name='employee.name'><%= employee.name %></td>
       <td data-name='employee.age'><%= employee.age %></td>
-      <td data-name='employee.busho'><%= employee.busho %></td>
+      <td data-name='employee.busho'><%= employee.section.sec_name %></td>
       <td class='operation x-content'>
         <%= link_to("表示", employee_path(employee), class: "btn btn-sm btn-default contenteditable" , "data-component" => "data/link") %>
         <%= link_to("編集", edit_employee_path(employee), class: "btn btn-sm btn-default contenteditable" , "data-component" => "data/link") %>

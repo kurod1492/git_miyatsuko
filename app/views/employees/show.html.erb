@@ -36,7 +36,7 @@
     <p data-component='base/paragraph' class='contenteditable'>部署</p>
   </div>
   <div class='col-md-9 column x-content'>
-    <p class='data-bind' data-component='data/text' data-name='@employee.busho'><%= @employee.busho %></p>
+    <p class='data-bind' data-component='data/text' data-name='@employee.busho'><%= @employee.section.sec_name %></p>
   </div>
 </div>
 <%= link_to("編集", edit_employee_path(@employee), class: "btn btn-sm btn-default contenteditable" , "data-component" => "data/link") %>
